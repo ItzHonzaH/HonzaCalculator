@@ -116,7 +116,6 @@ namespace HonzaCalc
         Keys.ShiftKey,
          };
 
-
         void richTextBox1_KeyDown(object sender, KeyEventArgs e)
         {
             // --------NUMERIC-KEYBOARD--------
@@ -171,10 +170,10 @@ namespace HonzaCalc
                 e.SuppressKeyPress = true;
             else if (!(
                 e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9 && e.Modifiers == Keys.Shift ||
-                e.KeyValue == 65 && e.Modifiers == Keys.Control ||
-                e.KeyValue == 88 && e.Modifiers == Keys.Control ||
-                e.KeyValue == 67 && e.Modifiers == Keys.Control ||
-                e.KeyValue == 86 && e.Modifiers == Keys.Control))
+                e.KeyCode == Keys.A && e.Modifiers == Keys.Control ||
+                e.KeyCode == Keys.C && e.Modifiers == Keys.Control ||
+                e.KeyCode == Keys.V && e.Modifiers == Keys.Control ||
+                e.KeyCode == Keys.X && e.Modifiers == Keys.Control))
                 e.SuppressKeyPress = true;
         }
 

@@ -1,23 +1,40 @@
-Basic Calculator created in C#<br />
-White-Orange design<br />
 
-Some Mathematic function:
-        // plus_Click ... plus [ + ]<br />
-        // minus_Click ... minus [ - ]<br />
-        // divided_Click ... divided [ + ]<br />
-        // multiply_Click ... multiply [ * ]<br />
-        // button12_Click ... pow [ x² ]<br />
-        // button14_Click ... [ 1/x ]<br />
-        // button16_Click ... sqrt [ √x ]<br />
-Clear function:<br />
-        // ce_Click ... All<br />
-        // backspace_Click ... One char<br />
-        
-        
-In future i want to add<br />
-        // calc when writing<br />
-        // use method <br />
-        // calc history<br />
-        // select repair ... line 24<br />
-        // double click function<br />
-        // repair all select
+# HonzaCalculator
+
+Basic Calculator created in C#
+
+
+## Math functition
+
+- plus [ + ] - (plus_Click)
+- minus [ - ] - (minus_Click)
+- divided [ / ] - (divided_Click)
+- multiply [ * ] - (multiply_Click)
+- pow [ x² ] - (button12_Click)
+- [ 1/x ] - (button14_Click)
+- sqrt [ √x ] - (button16_Click)
+
+### Clear functition
+
+- All - (ce_Click)
+- One char (backspace_Click)
+
+### To do list
+
+- Calc when typing
+- Usage method
+- Calc history
+- Select repair (line 24)
+- Double click
+- Repair Select
+- Repair english keyboard (shift D0-D9)
+
+
+## Authors
+
+- [@ItzHonzaH](https://www.github.com/ItzHonzaH)
+
+
+## 🛠 Skills
+PHP, HTML, CSS, C#...
+
