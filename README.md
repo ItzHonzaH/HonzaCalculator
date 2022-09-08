@@ -2,6 +2,7 @@
 # HonzaCalculator
 
 Basic Calculator created in C#
+https://www.dropbox.com/scl/fi/c24f2pawi5cyphd64z4wz/ALG.paper?dl=0&rlkey=373fyf6w9o1md7y58eyg5khtn
 
 
 ## Math functition
