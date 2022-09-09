@@ -22,7 +22,7 @@ namespace HonzaCalc
         public Form1()
         {
             InitializeComponent(); // Action after code start
-            this.FormBorderStyle = FormBorderStyle.None;
+            this.FormBorderStyle = FormBorderStyle.None; // turn off basic frame
             this.Padding = new Padding(borderSize);
             this.panelTitleBar.BackColor = borderColor;
             this.BackColor = borderColor;
@@ -195,11 +195,11 @@ namespace HonzaCalc
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
+        } // custom close
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
-        }
+        } // custom minimize
 
 
 

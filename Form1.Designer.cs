@@ -102,6 +102,7 @@
             // plus
             // 
             this.plus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.plus.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.plus, "plus");
             this.plus.Name = "plus";
             this.plus.UseVisualStyleBackColor = false;
@@ -110,6 +111,7 @@
             // minus
             // 
             this.minus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.minus.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.minus, "minus");
             this.minus.Name = "minus";
             this.minus.UseVisualStyleBackColor = false;
@@ -118,6 +120,7 @@
             // equals
             // 
             this.equals.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.equals.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.equals, "equals");
             this.equals.ForeColor = System.Drawing.Color.Black;
             this.equals.Name = "equals";
@@ -135,6 +138,7 @@
             // divided
             // 
             this.divided.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.divided.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.divided, "divided");
             this.divided.Name = "divided";
             this.divided.UseVisualStyleBackColor = false;
@@ -143,6 +147,7 @@
             // multiply
             // 
             this.multiply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.multiply.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.multiply, "multiply");
             this.multiply.ForeColor = System.Drawing.SystemColors.ControlText;
             this.multiply.Name = "multiply";
@@ -160,6 +165,7 @@
             // backspace
             // 
             this.backspace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.backspace.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.backspace, "backspace");
             this.backspace.Name = "backspace";
             this.backspace.UseVisualStyleBackColor = false;
@@ -168,6 +174,7 @@
             // ce
             // 
             this.ce.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.ce.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.ce, "ce");
             this.ce.Name = "ce";
             this.ce.UseVisualStyleBackColor = false;
@@ -175,9 +182,11 @@
             // 
             // ItzHonzaH
             // 
-            this.ItzHonzaH.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.ItzHonzaH.ActiveLinkColor = System.Drawing.Color.White;
             resources.ApplyResources(this.ItzHonzaH, "ItzHonzaH");
-            this.ItzHonzaH.LinkColor = System.Drawing.Color.White;
+            this.ItzHonzaH.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.ItzHonzaH.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.ItzHonzaH.LinkColor = System.Drawing.Color.Black;
             this.ItzHonzaH.Name = "ItzHonzaH";
             this.ItzHonzaH.TabStop = true;
             this.ItzHonzaH.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ItzHonzaH_LinkClicked);
@@ -193,6 +202,7 @@
             // button14
             // 
             this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button14.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button14, "button14");
             this.button14.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button14.Name = "button14";
@@ -202,6 +212,7 @@
             // button16
             // 
             this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button16.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button16, "button16");
             this.button16.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button16.Name = "button16";
@@ -267,6 +278,7 @@
             // button15
             // 
             this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button15.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button15, "button15");
             this.button15.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button15.Name = "button15";
@@ -275,6 +287,7 @@
             // button12
             // 
             this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button12.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button12, "button12");
             this.button12.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button12.Name = "button12";
@@ -313,6 +326,13 @@
             this.panelContainer.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panelContainer.Controls.Add(this.textBox1);
             this.panelContainer.Controls.Add(this.richTextBox1);
+            this.panelContainer.Controls.Add(this.button16);
+            this.panelContainer.Controls.Add(this.button14);
+            this.panelContainer.Controls.Add(this.backspace);
+            this.panelContainer.Controls.Add(this.ce);
+            this.panelContainer.Controls.Add(this.divided);
+            this.panelContainer.Controls.Add(this.equals);
+            this.panelContainer.Controls.Add(this.minus);
             resources.ApplyResources(this.panelContainer, "panelContainer");
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContainer_Paint);
@@ -324,21 +344,14 @@
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.button12);
-            this.Controls.Add(this.button16);
             this.Controls.Add(this.button15);
-            this.Controls.Add(this.button14);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.ItzHonzaH);
             this.Controls.Add(this.button11);
-            this.Controls.Add(this.ce);
-            this.Controls.Add(this.backspace);
             this.Controls.Add(this.multiply);
-            this.Controls.Add(this.divided);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.plus);
-            this.Controls.Add(this.minus);
-            this.Controls.Add(this.equals);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
