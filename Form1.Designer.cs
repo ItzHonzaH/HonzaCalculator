@@ -55,6 +55,13 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
+            this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.panelContainer = new System.Windows.Forms.Panel();
+            this.panelTitleBar.SuspendLayout();
+            this.panelContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -170,7 +177,7 @@
             // 
             this.ItzHonzaH.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.ItzHonzaH, "ItzHonzaH");
-            this.ItzHonzaH.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.ItzHonzaH.LinkColor = System.Drawing.Color.White;
             this.ItzHonzaH.Name = "ItzHonzaH";
             this.ItzHonzaH.TabStop = true;
             this.ItzHonzaH.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ItzHonzaH_LinkClicked);
@@ -274,11 +281,48 @@
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
+            // panelTitleBar
+            // 
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panelTitleBar.Controls.Add(this.btnMinimize);
+            this.panelTitleBar.Controls.Add(this.btnClose);
+            resources.ApplyResources(this.panelTitleBar, "panelTitleBar");
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            // 
+            // btnMinimize
+            // 
+            resources.ApplyResources(this.btnMinimize, "btnMinimize");
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.ForeColor = System.Drawing.Color.White;
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.UseVisualStyleBackColor = true;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // btnClose
+            // 
+            resources.ApplyResources(this.btnClose, "btnClose");
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Name = "btnClose";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // panelContainer
+            // 
+            this.panelContainer.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelContainer.Controls.Add(this.textBox1);
+            this.panelContainer.Controls.Add(this.richTextBox1);
+            resources.ApplyResources(this.panelContainer, "panelContainer");
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContainer_Paint);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button15);
@@ -288,7 +332,6 @@
             this.Controls.Add(this.button11);
             this.Controls.Add(this.ce);
             this.Controls.Add(this.backspace);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.multiply);
             this.Controls.Add(this.divided);
             this.Controls.Add(this.button10);
@@ -301,10 +344,10 @@
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.panelContainer);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -312,6 +355,14 @@
             this.Name = "Form1";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Activated += new System.EventHandler(this.Form1_Activated);
+            this.ResizeEnd += new System.EventHandler(this.Form1_ResizeEnd);
+            this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
+            this.panelTitleBar.ResumeLayout(false);
+            this.panelContainer.ResumeLayout(false);
+            this.panelContainer.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,6 +396,11 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Panel panelTitleBar;
+        private System.Windows.Forms.Button btnMinimize;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.Panel panelContainer;
     }
 }
 
