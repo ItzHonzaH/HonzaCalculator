@@ -348,15 +348,13 @@ namespace HonzaCalc
             }*/
 
             //int pos = Array.IndexOf(allowedKeys, e.KeyCode);
-            if (allowedKeys.Contains(e.KeyCode) == false)
-                e.SuppressKeyPress = true;
-            else if (!(
+            if (allowedKeys.Contains(e.KeyCode) == false || !(
                 e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9 && e.Modifiers == Keys.Shift ||
                 e.KeyCode == Keys.A && e.Modifiers == Keys.Control ||
                 e.KeyCode == Keys.C && e.Modifiers == Keys.Control ||
                 e.KeyCode == Keys.V && e.Modifiers == Keys.Control ||
-                e.KeyCode == Keys.X && e.Modifiers == Keys.Control))
-                e.SuppressKeyPress = true;
+                e.KeyCode == Keys.X && e.Modifiers == Keys.Control)) { 
+                e.SuppressKeyPress = true;}
         }
 
         // ------------NUMBERS------------
